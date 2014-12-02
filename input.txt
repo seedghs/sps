@@ -6,7 +6,7 @@ content:A small flower grows
     Nurtured by the warm sunlight
     Blooming in the Spring
 
-[2]
+[5]
 type:poem
 title:Pieta
 author:Jasmine Willis
@@ -47,7 +47,7 @@ content:We think the forest
     Thrive within the corpse of
     Mother.
 
-[3]
+[2]
 type:poem
 title:Test Poem
 author:Christopher Lin
@@ -55,3 +55,14 @@ content:This is
     a test poem
     yay test poem
     yay
+[4]
+type:prose
+title:Test Prose
+author: Christopher Lin
+content:This is a piece of prose blah blah blah blah blah
+    This is a second paragraph. Hopefully it works.
+[3]
+type:prose
+title:Test Prose 2
+author:Christopher Lin
+content:this is the second part. yay.
