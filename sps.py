@@ -1,17 +1,45 @@
-import jinja2
+import configparser
+def writeFromTemplate(template,args=[]):
+    for line in template:
+       if not "%" in line:
+           render.write(line)
+       else:
+           for arg in args:
+               if arg[0] in line:
+                   render.write(line.replace(arg[0],arg[1]))
+def renderFile(content):
+    for tline in template:
+        if not "%" in tline:
+            render.write(tline)
+        if(tline == "%CONTENT%\n"):
+            for contentBlock in content:
+                render.write("<div class='contentcontainer'>\n")
+                titleTemplate = open("titletemplate.html","r")
+                writeFromTemplate(titleTemplate,[["%TITLE%",contentBlock[2]],["%AUTHOR%",contentBlock[3]]])
+                titleTemplate.close()
+                #Render poems
+                if contentBlock[1] == "poem":
+                    poemTemplate = open("poemtemplate.html","r")
+                    writeFromTemplate(poemTemplate,[["%POEM%",contentBlock[4]]])
+                    poemTemplate.close()
+                render.write("</div>\n")
+                render.write("<br>")
 
-templateLoader = jinja2.FileSystemLoader( searchpath="." )
-templateEnv = jinja2.Environment( loader=templateLoader )
+def readInput(inputFile):
+    content=[]
+    config = configparser.ConfigParser()
+    config.read(inputFile)
+    for section in config.sections():
+        contentBlock=[int(section),config[section]['type'],config[section]['title'],config[section]['author'],config[section]['content']]
+        content.append(contentBlock)
+    content.sort()
+    return(content)
 
-TEMPLATE_FILE = "template.html"
-template = templateEnv.get_template( TEMPLATE_FILE )
+#Template and render files
+render = open("render.html","w")
+template = open("template.html","r")
+renderFile(readInput("input.txt"))
 
-# Here we add a new input variable containing a list.
-# Its contents will be expanded in the HTML as a unordered list.
 
-templateVars = { "stuff": "meow" }  
-outputText = template.render( templateVars )
-
-f = open("render.html","w")
-f.write(outputText)
-f.close()
+render.close()
+template.close()
