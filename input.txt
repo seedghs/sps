@@ -1,0 +1,57 @@
+[1]
+type:poem
+title:Spring Haiku
+author:Gabe Ayala
+content:A small flower grows
+    Nurtured by the warm sunlight
+    Blooming in the Spring
+
+[2]
+type:poem
+title:Pieta
+author:Jasmine Willis
+content:We think the forest
+    From which we rose
+    Is not a part of us
+    Until we join it again.
+    We forget
+    Few are our wants
+    Because the Earth that birthed us
+    Nurtures us in its bosom.
+    We cannot see our Mother
+    Because she is not like us.
+    Her hands are tough, gnarled trees.
+    Her milk is cool spring water.
+    The chest upon which we sleep
+    Is soft, spongy soil.
+    And she throws upon us a blanket
+    Knitted from the leaves of her hair.
+    She has seen her better days
+    Way back in Paradise,
+    When we knew from whence we came
+    And how.
+    Now her bosom is empty.
+    We have stolen her ribs
+    To birth ourselves,
+    And we build our homes
+    Atop her cavernous carcass.
+    The lullaby
+    Of her screams
+    Lull us to sleep
+    And we wake
+    Each morning
+    To her moans
+    Of sorrow.
+    Mother Mourned over the body of Son
+    We
+    Thrive within the corpse of
+    Mother.
+
+[3]
+type:poem
+title:Test Poem
+author:Christopher Lin
+content:This is
+    a test poem
+    yay test poem
+    yay

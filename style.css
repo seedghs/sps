@@ -1,0 +1,169 @@
+/*Defaults*/
+
+body {
+    background-color: #ffffff;
+    font-family: bebas_neueregular;
+    font-size: 14pt;
+    /*background-image: url('/assets/images/kanyewesty.jpg');*/
+    /*background-color: white;*/
+}
+
+/*Navbar stuff*/
+
+#navbar {
+    position: fixed;
+    right: 15px;
+    top: 10px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    float: right;
+}
+#navbar li {
+    float: left;
+}
+#navbar a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    opacity: 0.3;
+}
+
+#navbar a:hover{
+    opacity: 1;
+    transition: all 0.1s;
+}
+
+/* top level container */
+
+#maincontainer{
+    width: 100%;
+    text-align: left;
+}
+
+/* content container */
+
+.contentcontainer{
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: 10em;
+}
+
+
+
+/*Title bock stuff*/
+
+.titleblock #title{
+    margin: 0;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.titleblock #author{
+    margin: 0;
+    display: inline-block;
+    font-style: italic;
+}
+
+/*Staff*/
+
+#staff{
+    display: inline-block;
+    margin-bottom: 20em;
+}
+
+#staff td{
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+#staff tr{
+    margin: 0;
+}
+
+/*Contents*/
+
+#contents{
+    display: inline-block;
+    margin-bottom: 20em;
+    text-align: left;
+}
+
+#contents a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+#contents a{
+    background-color: rgba(0,0,0,0);
+}
+
+#contents a:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: all 0.1s;
+}
+
+
+
+/*Poems*/
+
+.poem{
+    display: inline-block;
+    margin-bottom: 20em;
+}
+
+.poem pre{
+    text-align: left;
+    font-family: merriweather;
+}
+
+/*Prose*/
+
+.prose {
+    display: inline-block;
+    width: 33em;
+    margin-bottom: 20em;
+}
+
+.prose p{
+    text-align: justify;
+    margin: 0;
+    text-indent: 4em;
+    font-family: merriweather;
+}
+
+/*Art*/
+
+.art {
+    padding: 1.5em;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 20em;
+}
+
+.art img{
+   /* max-width: 90vw;*/
+    max-height: 85vh;
+    margin: 0;
+}
+
+.art p{
+    margin: 0;
+    font-size: 0.75em;
+    padding: 0.25em
+}
+
+
+
+
+
+
