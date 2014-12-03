@@ -33,8 +33,14 @@ def renderFile(content):
                     writeFromTemplate(poemTemplate,[["%POEM%",contentBlock[4]]])
                     poemTemplate.close()
                 if contentBlock[1] == "prose":
+                    render.write("<br>")
                     proseTemplate = open("prosetemplate.html","r")
-                    writeFromTemplate(proseTemplate,[["%PROSE%",contentBlock[4]]])
+                    #Because of the nature of p tags, prose is a bit more hackish, and cannot use the template system
+                    #I actually hate myself because of this.
+                    render.write("<div class='prose'>")
+                    for splitline in contentBlock[4].splitlines():
+                        render.write("<p>"+splitline+"</p>")
+                    render.write("</div>")
                     proseTemplate.close()
                 render.write("</div>\n")
                 render.write("<br>")
@@ -50,7 +56,7 @@ def readInput(inputFile):
     return(content)
 
 #Template and render files
-render = open("render.html","w")
+render = open("index.html","w")
 template = open("template.html","r")
 renderFile(readInput("input.txt"))
 
