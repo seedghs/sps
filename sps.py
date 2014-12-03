@@ -24,15 +24,18 @@ def renderFile(content):
         if(tline == "%CONTENT%\n"):
             for contentBlock in content:
                 render.write("<div class='contentcontainer' id='"+str(contentBlock[0])+"'>\n")
-                titleTemplate = open("titletemplate.html","r")
-                writeFromTemplate(titleTemplate,[["%TITLE%",contentBlock[2]],["%AUTHOR%",contentBlock[3]]])
-                titleTemplate.close()
-                #Render poems
+                                #Render poems
                 if contentBlock[1] == "poem":
+                    titleTemplate = open("titletemplate.html","r")
+                    writeFromTemplate(titleTemplate,[["%TITLE%",contentBlock[2]],["%AUTHOR%",contentBlock[3]]])
+                    titleTemplate.close()
                     poemTemplate = open("poemtemplate.html","r")
                     writeFromTemplate(poemTemplate,[["%POEM%",contentBlock[4]]])
                     poemTemplate.close()
                 if contentBlock[1] == "prose":
+                    titleTemplate = open("titletemplate.html","r")
+                    writeFromTemplate(titleTemplate,[["%TITLE%",contentBlock[2]],["%AUTHOR%",contentBlock[3]]])
+                    titleTemplate.close()
                     render.write("<br>")
                     proseTemplate = open("prosetemplate.html","r")
                     #Because of the nature of p tags, prose is a bit more hackish, and cannot use the template system
@@ -42,6 +45,10 @@ def renderFile(content):
                         render.write("<p>"+splitline+"</p>")
                     render.write("</div>")
                     proseTemplate.close()
+                if contentBlock[1] == "art":
+                    artTemplate = open("arttemplate.html","r")
+                    writeFromTemplate(artTemplate,[["%TITLE%",contentBlock[2]],["%AUTHOR%",contentBlock[3]],["%CONTENT%",contentBlock[4]]])
+                    artTemplate.close()
                 render.write("</div>\n")
                 render.write("<br>")
 
