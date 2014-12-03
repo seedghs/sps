@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Your Title Here</title>
 </head>
 <body>
-    <p>{{ stuff }}</p> 
+    <div id="navbar">
+            <ul>
+                <li><a href="#contents">[&nbsp;Contents&nbsp;]</a></li>
+            </ul>
+    </div>
+    <div id="maincontainer">
+        <div id="contents" class="contentcontainer">
+            <p style="font-size: 2em; margin: 0; margin-bottom: 1em;">Table of Contents</p>
+%TABLEOFCONTENTS%
+        </div>
+        <br>
+%CONTENT%
+    </div>
 </body>
 </html>

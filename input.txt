@@ -55,14 +55,12 @@ content:This is
     a test poem
     yay test poem
     yay
-[4]
-type:prose
-title:Test Prose
-author: Christopher Lin
-content:This is a piece of prose blah blah blah blah blah
-    This is a second paragraph. Hopefully it works.
 [3]
 type:prose
-title:Test Prose 2
-author:Christopher Lin
-content:this is the second part. yay.
+title:Beauty is an Ugly Thing
+author:Jasmine Willis
+content:Beauty is an ugly thing. It is not blind like love; no, it sees—sees well—and excludes. From the narrow tunnel of its vision it selects those crafted from the mold of a pre-fabricated template and snubs the other contestants with a vain, remorseless glance by way of apology. If love is accepting, beauty is denying. Because I do not fit—do not conform—to that self-destroying mold, I am not beautiful. My eyes are not the perfect shade of that desired hue, my lips are not full or my cheeks rosy, my hair is not spun of angel’s thread, and for these uncontrollable faults I am not beautiful. If my skin is too pale, or too tan, or too brown, or too blotched and pimpled, or indeed of any complexion which is not the smooth perfection detailed in the formula for beauty, then I am not beautiful. I am not the height of a building; I refuse to starve and gag myself so that I am able to fit into a child’s clothing, and for this I am rejected acceptance into society. If I am myself—nay, if I am human—, then I am not beautiful.
+    Beauty praises such things as façades and deception. Morality, individualism, talent, intelligence, creativity—all are repulsive in the eyes of beauty, and should be left to the ugly, inferior members of society. What has happened to the times of old, when nature was praised as beautiful, and when, consequently, all people were beautiful because they were borne of nature? To us nature today is an abhorable, untamed—and untamable—beast, and that which is not perfect or slathered in its body weight of makeup is not beautiful.
+    The effects of beauty are unspoken and unacknowledged, but not unfelt. They—the beautiful people—parade about with their heads held high, in their gaudy clothes, laughing, smiling, trumpeting their lies to the world as truth, and the world so foolishly believes them, for no other reason than that they are beautiful. They can do no wrong, for if they are beautiful outside, than surely they must be just as lovely in heart, no? Hah! They are a demon with two faces. When they are unwatched, they ridicule us, put us down, flaunt their beauty in our faces, knowing how we burn to snatch if from them, and so put it a hair out of our reach to discourage us and remind us that it is simply another thing which we cannot have. But should they think even a shadow be looking upon them, they will disguise that devil’s face with more of their makeup until it is the face of an angel, and then they will stoop to help us up—but God forbid they soil their beauty by touching us! Indeed, they are saints for risking the contamination of their honor to help one in need.
+    To be different is a crime. We are judged by our appearance, race, culture, religion—indeed all those fundamental things which cannot be changed, but regardless of that fact we spend our lives trying to change this supposed darkness—this supposed inferiority—that we harbor in our hearts because we are different. We waste our time trying to change our lives, the epitome of truth, instead of the world, that great lie that has been polished, prettified, and presented as the real, highest truth.
+
